@@ -1,4 +1,4 @@
-# Chromebook Audio Fix (Arch Linux)
+# Chromebook Audio Fix (Arch Linux or Arch Based distros)
 Quick guide for restoring audio support on Chromebook devices running Arch Linux or Arch-based distributions.
 
 Install required tools:
@@ -15,6 +15,8 @@ Run the setup script:
 
 Reboot the system to apply changes:
 "reboot"
+
+Done! Your Chromebook's audio should now be working perfectly. :)
 
 # Hardware & Testing Environment
 
