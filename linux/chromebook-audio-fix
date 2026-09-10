@@ -1,1 +1,32 @@
+# Chromebook Audio Fix (Arch Linux)
+Quick guide for restoring audio support on Chromebook devices running Arch Linux or Arch-based distributions.
+
+Install required tools:
+"sudo pacman -Syu git python alsa-utils"
+
+Clone the repository:
+"git clone --depth 1 https://github.com/WeirdTreeThing/chromebook-linux-audio"
+
+Navigate to the directory:
+"cd chromebook-linux-audio"
+
+Run the setup script:
+"./setup-audio"
+
+Reboot the system to apply changes:
+"reboot"
+
+# Hardware & Testing Environment
+
+This procedure was tested and confirmed working on the following setup:
+
+* **Device:** Samsung Chromebook Go
+* **Board Name / HWID:** `SASUKE`
+* **CPU:** Intel Celeron N4500
+* **RAM / Storage:** 8 GB RAM / 64 GB eMMC
+* **Firmware:** Full ROM UEFI Firmware unlocked via [MrChromebox.tech](https://mrchromebox.tech/) script.
+* **OS:** Arch Linux / CachyOS (Kernel 6.x+)
+
+> **Note:** Unlocking the coreboot/UEFI firmware via MrChromebox script is a required step prior to installing Linux and applying audio patches on Chromebooks with Jasper Lake architecture (`SASUKE`).
+Script provided by WeirdTreeThing/chromebook-linux-audio.
 
