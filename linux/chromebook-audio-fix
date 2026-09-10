@@ -5,8 +5,8 @@ Install required tools:
 "sudo pacman -Syu git python alsa-utils"
 
 Clone the repository:
-```bash
-git clone --depth 1 https://github.com/WeirdTreeThing/chromebook-linux-audio
+
+"git clone --depth 1 https://github.com/WeirdTreeThing/chromebook-linux-audio"
 
 Navigate to the directory:
 "cd chromebook-linux-audio"
@@ -19,7 +19,7 @@ Reboot the system to apply changes:
 
 Done! Your Chromebook's audio should now be working perfectly. :)
 
-# Hardware & Testing Environment
+## Hardware & Testing Environment
 
 This procedure was tested and confirmed working on the following setup:
 
