@@ -6,34 +6,29 @@ Quick guide to install Sober (Roblox client for Linux) via Flatpak on any distri
 Choose the command for your Linux distribution:
 
 Ubuntu / Linux Mint / Pop!_OS / Debian:
-Bash
-
+```bash
 sudo apt update && sudo apt install flatpak
 
 Arch Linux / CachyOS / Manjaro:
-Bash
-
+```bash
 sudo pacman -S flatpak
 
 Fedora:
-Bash
-
+```bash
 sudo dnf install flatpak
 
 2. Add Flathub Repository
-Bash
-
+```bash
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 (Optional: Reboot your system after this step to make sure application shortcuts show up properly).
-3. Install Sober
-Bash
 
+3. Install Sober
+```bash
 flatpak install flathub org.vinegarhq.Sober
 
 4. Run Sober
 
 Launch Sober from your desktop application menu, or run it via terminal:
-Bash
-
+```bash
 flatpak run org.vinegarhq.Sober
