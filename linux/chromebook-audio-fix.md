@@ -1,23 +1,27 @@
 # Chromebook Audio Fix (Arch Linux or Arch Based distros)
 Quick guide for restoring audio support on Chromebook devices running Arch Linux or Arch-based distributions.
 
-Install required tools:
-"sudo pacman -Syu git python alsa-utils"
-
-Clone the repository:
-
-"git clone --depth 1 https://github.com/WeirdTreeThing/chromebook-linux-audio"
-
-Navigate to the directory:
-"cd chromebook-linux-audio"
-
-Run the setup script:
-"./setup-audio"
-
-Reboot the system to apply changes:
-"reboot"
-
-Done! Your Chromebook's audio should now be working perfectly. :)
+## Install required tools:
+```
+sudo pacman -Syu git python alsa-utils
+```
+## Clone the repository:
+```
+git clone --depth 1 https://github.com/WeirdTreeThing/chromebook-linux-audio
+```
+## Navigate to the directory:
+```
+cd chromebook-linux-audio
+```
+## Run the setup script:
+```
+./setup-audio
+```
+## Reboot the system to apply changes:
+```
+reboot
+```
+## Done! Your Chromebook's audio should now be working perfectly. :)
 
 ## Hardware & Testing Environment
 
