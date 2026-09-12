@@ -1,4 +1,4 @@
-# Display Brightness Control
+# Display Brightness Control on chromebook with hyprland + Cachy OS
 
 ## Install the brightness utility:
 ```
