@@ -21,7 +21,7 @@ cd chromebook-linux-audio
 ```
 reboot
 ```
-## Done! Your Chromebook's audio should now be working perfectly. :)
+### Done! Your Chromebook's audio should now be working perfectly. :)
 
 ## Hardware & Testing Environment
 
