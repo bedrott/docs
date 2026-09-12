@@ -7,8 +7,7 @@ Run wev in your terminal and press the Overview key to confirm it registers as X
 ### Add the Keybinding:
 Open your Hyprland configuration file (~/.config/hypr/hyprland.lua) and add the following line under your keybindings section:
 
--- Lock screen using the Chromebook Overview key via Noctalia
 ```
 hl.bind("XF86LaunchA", hl.dsp.exec_cmd("noctalia msg session lock"))
 ```
-Save the file. Press the Overview key on your keyboard—the Noctalia lock screen will trigger immediately.
+Save the file. Press the Overview key on your keyboard, the Noctalia lock screen will trigger immediately.
