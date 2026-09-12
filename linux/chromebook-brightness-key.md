@@ -1,11 +1,6 @@
-# Here is a clean, practical quick-start guide in English for setting up a Chromebook with CachyOS + Hyprland:
+# Display Brightness Control
 
-## Chromebook on Hyprland: Setup & Optimization Guide
-## 1. Configure Chromebook Function Keys
-
-Display Brightness Control
-
-### Install the brightness utility:
+## Install the brightness utility:
 ```
 sudo pacman -S brightnessctl
 ```
