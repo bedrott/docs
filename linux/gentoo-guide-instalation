@@ -36,6 +36,7 @@ mount /dev/mmcblk1p1 /mnt/gentoo/boot
 lsblk --to view the disk configuration
 
 cd /mnt/gentoo
+wget https://distfiles.gentoo.org/releases/amd64/autobuilds/20260920T170055Z/stage3-amd64-openrc-20260920T170055Z.tar.xz
 
 
 
