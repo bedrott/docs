@@ -1,1 +1,43 @@
+nmtui --to configure internet
+
+fdisk /dev/mmcblk1
+g --gpt table
+
+n --new particion
+1 --particion number 1
+enter --first sector default
++512m -last sector
+t --type 
+1 --EFI system
+
+n --new particion
+2 --particion 2
+enter --first sector default
++4g --last sector
+t --type of particion
+2 --particion 2
+19 --Linux Swap
+
+n --new particion
+3 --particion 3
+enter --first sector default
+enter --to use all space
+
+w --to save all the settings
+
+mkfs.vfat -F 32 /dev/mmcblkp1 --format partition 1 to FAT32
+mkfs.ext4 /dev/mmcblk1p3
+mkswap /dev/mmcblk1p2
+swapon /dev/mmcblk1p2
+mount /dev/mmcblk1p3 /mnt/gentoo
+mkdir -p /mnt/gentoo/boot
+mount /dev/mmcblk1p1 /mnt/gentoo/boot
+
+lsblk --to view the disk configuration
+
+cd /mnt/gentoo
+
+
+
+
 
