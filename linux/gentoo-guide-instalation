@@ -52,6 +52,31 @@ MAKEOPTS="-j3 -l2"
 LC_MESSAGES=C.UTF-8
 
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --jobs=1 --load-average=2"
+---------
+
+mirrorselect -i -o >> /etc/portage/make.conf --select mirrors
+
+cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
+
+mount --types proc /proc /mnt/gentoo/proc
+mount --rbind /sys /mnt/gentoo/sys
+mount --make-rslave /mnt/gentoo/sys
+mount --rbind /dev /mnt/gentoo/dev
+mount --make-rslave /mnt/gentoo/dev
+mount --bind /run /mnt/gentoo/run
+mount --make-slave /mnt/gentoo/run
+
+chroot /mnt/gentoo /bin/bash
+source /etc/profile
+export PS1="(chroot) ${PS1}"
+
+mount /dev/mmcblk1p1 /boot
+
+rm /stage3-*.tar.xz
+
+emerge-webrsync
+
+
 
 
 
